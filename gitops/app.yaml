@@ -1,20 +1,21 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: Keycloak
-  namespace: my-argocd
+  name: keycloak
 spec:
   destination:
     name: ''
-    namespace: rhbk3
+    namespace: rhbk5
     server: 'https://kubernetes.default.svc'
   source:
     path: kc
     repoURL: 'https://github.com/viniciusfcf/rhbk-101'
     targetRevision: main
   sources: []
-  project: Keycloak
+  project: default
   syncPolicy:
     automated:
       prune: false
       selfHeal: false
+    syncOptions:
+      - CreateNamespace=true
