@@ -2,9 +2,3 @@ kind: Namespace
 apiVersion: v1
 metadata:
   name: rhbk4
-  labels:
-    argocd.argoproj.io/managed-by: my-argocd
-    kubernetes.io/metadata.name: rhbk4
-  annotations:
-    openshift.io/description: ''
-    openshift.io/display-name: ''
