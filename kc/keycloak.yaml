@@ -3,6 +3,7 @@ kind: Keycloak
 metadata:
   name: keycloak
 spec:
+  # https://access.redhat.com/documentation/en-us/red_hat_build_of_keycloak/22.0/html-single/server_guide/index#all-config-
   instances: 1
   db:
     vendor: postgres
