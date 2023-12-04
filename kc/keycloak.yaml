@@ -18,4 +18,4 @@ spec:
   hostname:
     # Pattern: http://<KC_NAME>-<NAMESPACE>.<OCP_HOST>
     # Example: http://keycloak-rhbk.apps.cluster-vqgg6.dynamic.opentlc.com
-    hostname: test.keycloak.org
+    hostname: keycloak-rhbk.apps.cluster-vqgg6.dynamic.opentlc.com
